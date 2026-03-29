@@ -1,5 +1,5 @@
 ---
-name: generate_commit_message
+name: commit-message-simple
 description: 変更内容から、プレフィックス付きのシンプルな日本語コミットメッセージを生成し、適切な単位でコミットを分割提案する
 ---
 
