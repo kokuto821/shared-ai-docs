@@ -198,6 +198,19 @@ useEffect(() => {
 - 単一責任の原則に従う
 - 副作用のない純粋関数を推奨する
 - 引数が多い場合はオブジェクト形式にする
+- 関数は**アロー関数**で定義する
+
+```typescript
+// ✅ 良い例
+export const greet = (name: string): string => {
+  return `Hello, ${name}`;
+};
+
+// ❌ 悪い例
+export function greet(name: string): string {
+  return `Hello, ${name}`;
+}
+```
 
 ```typescript
 export const determineSwipeDirection = ({
